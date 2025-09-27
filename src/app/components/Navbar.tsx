@@ -60,6 +60,9 @@ const Navbar: React.FC = () => {
               </span>
             )}
           </Link>
+          <Link href="/login" className={`text-gray-600 hover:text-blue-500 cursor-pointer ${pathname === '/login' ? 'text-blue-500 font-semibold' : ''}`}>
+            Login
+          </Link>
         </div>
       </div>
     </nav>

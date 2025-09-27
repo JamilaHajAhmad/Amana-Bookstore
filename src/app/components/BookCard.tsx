@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Book } from '../types';
+import bookImage from '../../../public/images/book.png';
 
 interface BookCardProps {
   book: Book;
@@ -87,7 +88,9 @@ const BookCard: React.FC<BookCardProps> = ({ book, onAddToCart }) => {
       <Link href={`/book/${book.id}`} className="block cursor-pointer">
         <div className="relative h-64 w-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition-colors duration-200">
           {/* Book Icon Placeholder */}
-          <div className="text-6xl text-gray-400">📚</div>
+          <div className="text-6xl text-gray-400">
+            <img src={bookImage.src} alt="Book Cover" className="h-32 w-32 object-contain" />
+          </div>
         </div>
       </Link>
       
