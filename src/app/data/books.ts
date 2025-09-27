@@ -5,8 +5,8 @@ export const books: Book[] = [
   // Physics Textbooks
   {
     id: '1',
-    title: 'Fundamentals of Classical Mechanics',
-    author: 'Dr. Ahmad Al-Kindi',
+    title: 'To be or not to be',
+    author: 'John Doe',
     description: 'A comprehensive introduction to classical mechanics covering Newtonian dynamics, conservation laws, rotational motion, and oscillations with modern applications.',
     price: 89.99,
     image: '/images/book1.jpg',
